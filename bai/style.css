@@ -1,0 +1,114 @@
+.header{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    height: 80px;
+    width: auto;
+}
+pre{
+    font-size: 30px;
+    margin: 5px;
+}
+.content .menu {
+    background-color: coral;
+    height: 245px;
+    width: 250px;
+}
+.content .menu ul{
+list-style: none;
+margin-left: -40px;
+}
+.content .menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.content .menu ul li {
+    padding: 5px;
+    box-shadow: 0px 1px #000;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.content-center a{
+    display: flex;
+}
+.right-top a{
+text-decoration: none;
+font-size: 20px;
+
+}
+.right-top td a{
+margin: 50px;
+
+}
+.right-center{
+    border: 1px solid #000;
+}
+h3{
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+.right-end{
+     border: 1px solid #000;
+}
+.right-end tr th{
+     border-bottom: 1px solid #000;
+}
+.content-right .right-top{
+    margin-bottom: 20px;
+}
+.content-right .right-center{
+    margin-bottom: 20px;
+}
+p{
+    margin-left: 20px;
+}
+.a{
+    display: flex;
+    margin: 50px ;
+    align-items: center;
+}
+.b{
+    display: flex;
+     margin: 50px ;
+     align-items: center;
+}
+.c{
+    display: flex;
+     margin: 50px ;
+     align-items: center;
+}
+.footer{
+    background-color: rgb(102, 61, 207);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(241, 218, 11);
+    padding: 10px;
+    margin-top: 20px;
+}
+.menu-con {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: coral;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    z-index: 1000;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li:hover .menu-con {
+    display: block;
+}
+
+
+

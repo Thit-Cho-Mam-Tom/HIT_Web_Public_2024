@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    height: 100px;
+    width: auto;
+}
+.header .header-right{
+    display: flex;
+    align-items: center;
+    i{
+        font-size: 50px;
+    }
+}
+.header-right p{
+    font-size: 30px;
+    color: rgb(218, 32, 94);
+}
+.nar{
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.nar .nar-left a{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 50px;
+    
+}
+.nar .nar-right {
+    display: flex;
+}
+.nar .nar-right input{
+    height: 50px;
+    width: 500px;
+    font-size: 30px;
+}
+.nar .nar-right select{
+    height: 50px;
+}
+.nar .nar-right button{
+   width: 50px;;
+}
+.content{
+    width: 30%;
+}
+.content .titel{
+    background-color: yellow;
+}
+.menu li{
+padding: 10px 12px;
+border-bottom: 1px solid #c9b0b0;
+     background-color: rgb(76, 69, 101);
+     color: aliceblue;
+
+}
+.titel{
+    font-size: 40px;
+}
+.menu2{
+    display: none;
+     position: absolute;
+     top: 0;
+     left: 100%;
+     width: 100%;
+     background-color: rgb(57, 37, 129);
+     list-style: none;
+}
+.menu li:hover{
+    background-color: #baafaf;
+}
+.menu1:hover .menu2{
+display: block;
+}
+.menu1{
+    position: relative;
+    
+}
+.content2{
+    width: 70%;
+    border: 1px solid #000;
+}
+section{
+    display: flex;
+}
+.content2 .content2-top{
+display: flex;
+justify-content: space-between;
+font-size: 50px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.content-center{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+}
+.item2{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+}
+.content-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.a{
+    display: flex;
+}

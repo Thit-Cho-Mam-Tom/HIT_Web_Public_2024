@@ -1,0 +1,25 @@
+#wrapper{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#from-login{
+    max-width: 400px;
+    background-color:rgb(255, 255, 255);
+    flex-grow: 1;
+    padding:auto;
+    border-radius: 10px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin-top: 20px;
+}
+button{
+    background-color:chocolate;
+    
+}

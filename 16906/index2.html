@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Nhập chuỗi</td>
+            <td><input type="text" class="a"></td>
+        </tr>
+        <tr>
+            <td>số từ có 4 kí tự</td>
+            <td><input type="text" class="b"></td>
+        </tr>
+        <tr>
+            <td><button class="tim">tìm</button></td>
+            <td><button class="huy">hủy bỏ</button></td>
+        </tr>
+    </table>
+    <script>
+        const a = document.querySelector(".a");
+        const b = document.querySelector(".b");
+        const btim = document.querySelector(".tim");
+        const bhuy = document.querySelector(".huy");
+        btim.addEventListener("click",function(){
+            var s = a.value;
+            var dem = 0;
+            var res = 0;
+           for (let i = 0; i < s.length; i++) {
+            if (s[i] !== ' ') {
+                dem++;
+            }
+            if (s[i] === ' ' || i === s.length - 1) {
+                if (dem === 4) {
+                    res++;
+                }
+                dem = 0; 
+            }
+        }
+            b.value=res;
+        })
+    </script>
+</body>
+</html>

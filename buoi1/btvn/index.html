@@ -1,119 +1,235 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>BTVN1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        .centered-container {
-            width: 100%; 
-            margin: 0 auto;
-            text-align: center;
-            background-color:rgb(241, 134, 57);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .centered-container2{
-           width:100%;
-           margin:0 auto;
-           text-align: center;
-           background-color: black;
+
+        img {
+            width: 100%;
+            height: 80px;
         }
-        .white-text{
-            color:white;
+
+        .logo img {
+            width: 80px;
+            height: 80px;
         }
+
+        .header-top {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: -80px;
+        }
+
+        h2 {
+            color: #e32712;
+        }
+
+        .header-bottom {
+            background: #b8ed77;
+            height: 50px;
+            position: relative;
+            top: -90px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            width: 60%;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            border-right: 1px solid #000;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+
+        .search img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .search {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 40%;
+        }
+
+        .logo2 img {
+            margin-right: 10px;
+        }
+
+        input {
+            height: 30px;
+            width: 400px;
+        }
+
+        .content {
+            background-color: #e32712;
+            width: 30%;
+
+            li {
+                padding: 10px 12px;
+                border-bottom: 1px solid #000;
+            }
+
+            li:hover {
+                background-color: rgb(149, 137, 137);
+            }
+
+            div {
+                background-color: aqua;
+                font-size: 30px;
+                border-bottom: 1px solid #000;
+            }
+        }
+
+        section {
+            display: flex;
+        }
+        .menu3 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            background-color: bisque;
+           
+        }
+        .menu2{
+            position: relative;
+        }
+        .menu2:hover .menu3 {
+            display: block;
+        }
+
+        .contentcon{
+            background-color: rgb(255, 255, 255);
+            width: 70%;
+        }
+        .content-header{
+            display: flex;
+            justify-content: space-between;
+        }
+        /* .content-content {
+            display: flex;
+            justify-content: space-between;
+        } */
+        .content-content  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.content-content .content-right img {
+    width: 30%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #f9f9f9;
     
-        .circle-img {
-            width: 100px; 
-            height: 100px; 
-            border-radius: 50%; 
-            object-fit: cover; 
-            border: 3px solid white; 
-            margin: 20px 0;
-        }
-        .heart{
-            width:50px;
-            height:50px;
-            background-color: rgb(240, 33, 33);
-            clip-path: path('M 50 15 A 35 35 0 1 1 50 15 Z');
-        }
-        table{
-            width:30%
-        }
-        table,td,th{
-            border:1px solid black;
-            border-collapse: collapse;
-        }
-        th{
-            background-color: rgb(255, 188, 65) 
-        }
-        td{
-            text-align: center;
-        }
-        
-        
+}
+.content-content .content-left img {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-items: flex-start;
+    
+}
+
     </style>
 </head>
+
 <body>
-    <header class="centered-container">
-        <h1 class="white-text">Welcome to my first website</h1>
-    </header> 
-   <h2>
-     <span>Xin chào tớ tên là</span>
-     <span><i style="color:rgb(250, 53, 53)">Hiểu</i></span>
-     <span>thật may mắn khi được tham gia vào lớp Web Public của CLB HIT</span>
-   </h2>
-   <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/01/anh-dai-dien-hacker-dep-1-16-10-12-31.jpg" class="circle-img">
-   <h3>Đôi chút về tớ nè</h3>
-   <h4>
-   <li>
-    Họ và Tên: Nguyễn Minh Hiểu</li>
-   <li>Quê quán: Hà Nội</li>
-   <li>Lớp: CNTT02</li>
-   <li> Khóa: K18 </li>
-   <li> Ngành: CNTT </li>
-   </h4>
-   <h3>Các cậu có thể hệ với tớ thông qua facebook này nè: 
-    <span style="color:blueviolet"> Minh Hiểu</span>
-    <p>Tớ còn dùng cả instagram này nữa các cậu cho tớ xin 1 follow nhé ❤️ <span style="color:blueviolet">Nguyễn Minh Hiểu</span> </p>
-    Sở thích của tớ là :
-   </h3>
-   <p>
-    <ol>
-        <li>Làm btvn của HIT❤️</li>
-        <li>Eat</li>
-        <li>Code</li>
-        <li>Sleep</li>
-    </ol>
-   </p>
-   <h3>
-    <td>Tớ cũng có crush của tớ rồi đấy😘 Để tớ bật mí cho cậu nha 👉<button>crush của tớ ở đây nè</button>👈</td>
-    <p>Tớ cũng học rất giỏi đấy nha !!!<p>
-   </h3>
-  <table >
-    <tr >
-        <th> STT </th>
-        <th> MÔN </th>
-        <th> ĐIỂM </th>
-    </tr>
-    <tr>
-        <td> 1 </td>
-        <td> Toán </td>
-        <td><button> click để xem</button></td>
-    </tr>
-    <tr>
-        <td> 2 </td>
-        <td> Văn </td>
-        <td><button> click để xem</button></td>
-    </tr>
-    <tr>
-        <td> 3 </td>
-        <td> Anh </td>
-        <td><button> click để xem</button></td>
-    </tr>
-  </table>
-  <h3>
-  <i style="color:rgb(246, 62, 62)">Bài tập về nhà tuần 1 của mình đã hoàn thành và đã đưa lên Github. Tớ sẽ cập nhập các bài tập tiếp theo vào Github cùng với các bài tập của các anh chị.</i>
-</h3>
-<h4 class="centered-container2">
-    <p style="color:white">Hẹn gặp lại các cậu ở tuần sau nhé !!!</p>
-</h4>
+    <header class="header">
+        <img src="https://i.pinimg.com/736x/c2/e9/02/c2e902e031e1d9d932411dd0b8ab5eef.jpg" alt="">
+        <div class="header-top">
+            <div class="logo">
+                <img src="images copy.png" alt="">
+            </div>
+            <div>
+                <h2>Bao Thach meniren & production company limited</h2>
+                <h3>Adrees ButPhong Vilargre ssadah jahbr gaqebr </h3>
+            </div>
+
+        </div>
+        <div class="header-bottom">
+            <div class="menu">
+
+                <a href="http://">Trang chủ</a>
+                <a href="http://">Sản phẩm</a>
+                <a href="http://">Tin tức</a>
+                <a href="http://">Giới thiệu</a>
+                <a href="http://">Liên hệ</a>
+                </ul>
+            </div>
+            <div class="search">
+                <div class="logo2">
+                    <img src="images copy.png" alt="">
+                    <img src="images copy.png" alt="">
+                </div>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="content">
+            <div class="titel">Theo ứng dụng</div>
+            <ul class="menu1">
+                <li>NL ngành thức ăn chăn nuôi</li>
+                <li>NL ngành thủy hải sản</li>
+                <li>NL ngành sản xuất phân bón</li>
+                <li>Nguyên liệu xây dựng</li>
+                <li class="menu2">Các ngành khác
+                    <ul class="menu3">
+                        <li>Nl ngành kính</li>
+                        <li>NL ngành liệu kim</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="contentcon">
+            <div class="content-header">
+                <h3>So Quay nhan tao</h3>
+                <a href="http://">xem tat ca</a>
+            </div>
+            <hr>
+            <div class="content-content">
+                <div class="content-left">
+                    <img src="images copy.png" alt="">
+                    <img src="images copy.png" alt="">
+                    <img src="images copy.png" alt="">
+                </div>
+                <div class="content-right">
+                    <img src="images copy.png" alt="">
+                    <img src="images copy.png" alt="">
+                    <img src="images copy.png" alt="">
+                    <img src="images copy.png" alt="">
+                    <img src="images copy.png" alt="">
+                    <img src="images copy.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

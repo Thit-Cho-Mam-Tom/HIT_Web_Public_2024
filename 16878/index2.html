@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UCLN Calculator</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>Nhập số thứ nhất:</td>
+      <td><input type="text" class="so1"></td>
+    </tr>
+    <tr>
+      <td>Nhập số thứ hai:</td>
+      <td><input type="text" class="so2"></td>
+    </tr>
+    <tr>
+      <td>UCLN của 2 số:</td>
+      <td><input type="text" class="so3" readonly></td>
+    </tr>
+    <tr>
+      <td><button class="btnTim">Tìm</button></td>
+      <td><button class="btnHuy">Hủy bỏ</button></td>
+    </tr>
+  </table>
+
+  <script>
+    const a = document.querySelector(".so1");
+    const b = document.querySelector(".so2");
+    const c = document.querySelector(".so3");
+    const btnTim = document.querySelector(".btnTim");
+    const btnHuy = document.querySelector(".btnHuy");
+
+    // Hàm tìm UCLN (GCD)
+    function gcd(x, y) {
+     if(y==0) return x;
+     return gcd(y,x%y);
+    }
+
+    btnTim.addEventListener("click",function(){
+        c.value=gcd(a.value,b.value);
+    })
+    btnHuy.addEventListener("click",function(){
+        a.value=""
+        b.value=""
+        c.value=''
+    })
+  </script>
+</body>
+</html>

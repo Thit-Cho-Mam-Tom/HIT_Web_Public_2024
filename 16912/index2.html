@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Nhap chuoi</td>
+            <td><input type="text" class="a"></td>
+        </tr>
+        <tr>
+            <td>Nhap tu</td>
+            <td><input type="text" class="b"></td>
+        </tr>
+        <tr>
+            <td>thong bao</td>
+            <td><input type="text" class="tb"></td>
+        </tr>
+        <tr>
+            <td><button class="kiemtra">kiem tra</button></td>
+            <td><button class="huybo">huy bo</button></td>
+        </tr>
+    </table>
+    <script>
+        const a = document.querySelector(".a")
+        const b = document.querySelector(".b")
+        const tb = document.querySelector(".tb")
+        const btb = document.querySelector(".tb")
+        const btk = document.querySelector(".kiemtra")
+        const bth = document.querySelector(".huybo")
+        
+        btk.addEventListener("click",function(){
+            var s=a.value;
+            var x=b.value;
+            var dem = 0;
+            for(var i = 0; i < s.length; i++){
+                var tmp ++ s[i];
+                if(s[i] != " "){
+                    tmp=0;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

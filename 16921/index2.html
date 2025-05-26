@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>thang</td>
+            <td><input type="text" name="" id="" class="a"></td>
+        </tr>
+           <tr>
+            <td>nam</td>
+            <td><input type="text" name="" id="" class="b"></td>
+        </tr>
+           <tr>
+            <td>ngay</td>
+            <td><input type="text" name="" id="" class="c"></td>
+        </tr>
+        <tr>
+            <td><button class="d">hien thi so ngay</button></td>
+        </tr>
+    </table>
+    <script>
+        const a = document.querySelector(".a");
+        const b = document.querySelector(".b");
+        const c = document.querySelector(".c");
+        const d = document.querySelector(".d");
+        d.addEventListener("click",function(){
+            var x = a.value;
+            var y = b.value;
+            var kq;
+            if(x==3 || x==1 || x==5|| x==7|| x==8||x==10||x==12){
+                 kq= 30;
+            }
+            else if(x==4 || x==6||x==9||x==11){
+                kq = 31
+            }
+            else if(x==2 && y%4==0){
+                kq=29;
+            }
+            else{
+                kq=28;
+            }
+            c.value=kq;
+        })
+    </script>
+</body>
+</html>
