@@ -122,3 +122,13 @@ width: 100%;
     border: 1px solid #999;
     padding: 20px;
 }
+.item2{
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+ background-color: aqua;
+ top: calc(50%-200px);
+ left: calc(50%-200px);
+}
+

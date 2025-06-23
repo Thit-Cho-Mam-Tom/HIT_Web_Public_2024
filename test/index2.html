@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>so thu nhat</td>
+            <td><input type="text" class="a"></td>
+        </tr>
+         <tr>
+            <td>so thu hai</td>
+            <td><input type="text" class="b"></td>
+        </tr>
+         <tr>
+            <td>ket qua</td>
+            <td><input type="text" class="c"></td>
+        </tr>
+        <tr>
+            <td><button class="tim">tim</button></td>
+        </tr>
+    </table>
+    <script>
+        const a = document.querySelector(".a")
+         const b = document.querySelector(".b")
+          const c = document.querySelector(".c")
+           const btn = document.querySelector(".tim")
+           btn.addEventListener("click",function(){
+            var x = a.value;
+            var y = b.value;
+            var kq;
+            function gcd(x,y){
+                if(y==0) return x;
+                return gcd(y,y%=x);
+            }
+            kq=gcd(x,y);
+            c.value = kq;
+           })
+    </script>
+</body>
+</html>

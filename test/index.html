@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .header {
+            background-color: blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: aqua;
+            height: 50px;
+            align-items: center;
+        }
+
+        .var-left a {
+            padding: 30px;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(11, 15, 18);
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+        }
+        section{
+            display: flex;
+        }
+        .menu{
+            background-color: yellow;
+            width: 30%;
+        }
+        .menu li {
+            list-style: none;
+            a{
+                text-decoration: none;
+                font-size: 30px;
+            }
+            border-bottom: 1px solid #9999;
+            margin-left: -30px ;
+        }
+        .menu2{
+            display: none;
+            background-color: yellow;
+        }
+        .menu li:hover{
+            background-color: brown;
+        }
+        .menu .menu1:hover .menu2{
+            display: block;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        .menu1{
+            position: relative;
+        }
+        .iteam img{
+            width: 150px;
+            height: 150px;
+        }
+        .content{
+            border: 1px solid #999;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 70%;
+        }
+        .iteam{
+            border: 1px solid #999;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="laptop_lenovo_legion_s7_8.jpg" alt="">
+        <h3>xin chao</h3>
+        <img src="laptop_lenovo_legion_s7_8.jpg" alt="">
+    </header>
+    <div class="nav">
+        <div class="var-left">
+            <a href="">Home</a>
+            <a href="">Role</a>
+            <a href="">Ipad</a>
+            <a href="">Iphone</a>
+        </div>
+        <input type="text" placeholder="search">
+    </div>
+    <section>
+        <ul class="menu">
+            <li><a href="">trang chu</a></li>
+            <li class="menu1"><a href="">san pham</a>
+                <ul class="menu2">
+                    <li>dien thoai</li>
+                    <li>laptop</li>
+                    <li>sac pin</li>
+                </ul>
+            </li>
+            <li><a href="">abc</a></li>
+            <li><a href="">jqk</a></li>
+        </ul>
+        <div class="content">
+            <div class="iteam">
+                <img src="laptop_lenovo_legion_s7_8.jpg" alt="">
+                <p>laptop legion 5</p>
+            </div>
+            <div class="iteam">
+                <img src="laptop_lenovo_legion_s7_8.jpg" alt="">
+                <p>laptop legion 5</p>
+            </div>
+            <div class="iteam">
+                <img src="laptop_lenovo_legion_s7_8.jpg" alt="">
+                <p>laptop legion 5</p>
+            </div>
+            <div class="iteam">
+                <img src="laptop_lenovo_legion_s7_8.jpg" alt="">
+                <p>laptop legion 5</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
